@@ -14,7 +14,7 @@ export function Layout() {
       </main>
       <footer className="layout__footer">
         <span>RIGOBERTO GODINEZ · TRON GRID PORTFOLIO</span>
-        <span>KINAL · PERITO TÉCNICO EN COMPUTACIÓN</span>
+        <span>KINAL · PERITO TÉCNICO EN INFORMÁTICA</span>
       </footer>
     </div>
   )

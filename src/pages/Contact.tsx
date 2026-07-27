@@ -11,8 +11,8 @@ export function Contact() {
         <p className="page__eyebrow">Redes profesionales</p>
         <h1>Conexión</h1>
         <p className="page__lead">
-          LinkedIn y CompuTrabajo según la consignas del proyecto. Envíame tus
-          enlaces y los activo.
+          LinkedIn y CompuTrabajo activos para que reclutadores encuentren tu
+          perfil.
         </p>
       </header>
 
@@ -56,8 +56,8 @@ export function Contact() {
         <NeonCard accent="orange" className="stack-gap">
           <h2 className="section-title">Nota</h2>
           <p>
-            Estas plataformas ayudan a que reclutadores encuentren tu perfil.
-            En cuanto me pases los enlaces, los dejo brillando en neón aquí.
+            Tus canales profesionales están listos. Mantén LinkedIn y
+            CompuTrabajo actualizados para maximizar oportunidades.
           </p>
         </NeonCard>
       </div>
