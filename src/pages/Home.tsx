@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import { profile } from '../data/profile'
 import { projects } from '../data/projects'
+import { scrollToSection } from '../data/sections'
 import { Carousel } from '../components/Carousel'
 import { NeonCard } from '../components/NeonCard'
 import './Home.css'
@@ -22,19 +22,27 @@ export function Home() {
     ))
 
   return (
-    <section className="home">
+    <section id="inicio" className="home section">
       <div className="home__hero">
-        <p className="home__signal">SEÑAL ACTIVA // GRID 2010</p>
+        <p className="home__signal">Desarrollador · Ciudad de Guatemala</p>
         <h1 className="home__name">{profile.name}</h1>
         <p className="home__title">{profile.title}</p>
         <p className="home__phrase">“{profile.welcomePhrase}”</p>
         <div className="home__actions">
-          <Link className="btn btn--primary" to="/proyectos">
+          <button
+            type="button"
+            className="btn btn--primary"
+            onClick={() => scrollToSection('proyectos')}
+          >
             Ver proyectos
-          </Link>
-          <Link className="btn btn--ghost" to="/sobre-mi">
+          </button>
+          <button
+            type="button"
+            className="btn btn--ghost"
+            onClick={() => scrollToSection('sobre-mi')}
+          >
             Sobre mí
-          </Link>
+          </button>
         </div>
       </div>
 

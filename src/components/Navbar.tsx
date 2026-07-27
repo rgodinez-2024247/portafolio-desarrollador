@@ -1,35 +1,38 @@
-import { NavLink } from 'react-router-dom'
+import { profile } from '../data/profile'
+import { scrollToSection, sections } from '../data/sections'
+import { useActiveSection } from '../hooks/useActiveSection'
 import './Navbar.css'
 
-const links = [
-  { to: '/', label: 'Inicio', end: true },
-  { to: '/sobre-mi', label: 'Sobre mí' },
-  { to: '/habilidades', label: 'Habilidades' },
-  { to: '/experiencia', label: 'Trayectoria' },
-  { to: '/proyectos', label: 'Proyectos' },
-  { to: '/contacto', label: 'Conexión' },
-]
-
 export function Navbar() {
+  const active = useActiveSection()
+
   return (
     <header className="nav">
       <div className="nav__inner">
-        <NavLink to="/" className="nav__brand" end>
+        <button
+          type="button"
+          className="nav__brand"
+          onClick={() => scrollToSection('inicio')}
+          aria-label={`Ir al inicio — ${profile.name}`}
+        >
           <span className="nav__brand-mark">RG</span>
-          <span className="nav__brand-text">PORTAFOLIO</span>
-        </NavLink>
+          <span className="nav__brand-copy">
+            <span className="nav__brand-name">Rigoberto</span>
+            <span className="nav__brand-surname">Godinez</span>
+          </span>
+        </button>
         <nav className="nav__links" aria-label="Principal">
-          {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              end={link.end}
-              className={({ isActive }) =>
-                `nav__link${isActive ? ' nav__link--active' : ''}`
-              }
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              type="button"
+              className={`nav__link${
+                active === section.id ? ' nav__link--active' : ''
+              }`}
+              onClick={() => scrollToSection(section.id)}
             >
-              {link.label}
-            </NavLink>
+              {section.label}
+            </button>
           ))}
         </nav>
       </div>

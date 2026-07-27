@@ -29,9 +29,9 @@ export function Projects() {
     )
 
   return (
-    <section className="page">
+    <section id="proyectos" className="page section">
       <header className="page__header">
-        <p className="page__eyebrow">Portafolio de aplicaciones</p>
+        <p className="page__eyebrow">Mis aplicaciones</p>
         <h1>Proyectos</h1>
         <p className="page__lead">
           Haz clic en un proyecto activo para abrir su repositorio en GitHub.

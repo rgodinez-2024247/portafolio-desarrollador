@@ -6,7 +6,7 @@ export function Contact() {
   const { github, linkedin, computrabajo, email } = profile.contact
 
   return (
-    <section className="page">
+    <section id="contacto" className="page section">
       <header className="page__header">
         <p className="page__eyebrow">Redes profesionales</p>
         <h1>Conexión</h1>

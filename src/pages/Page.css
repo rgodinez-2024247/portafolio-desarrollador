@@ -3,6 +3,17 @@
   gap: 1.75rem;
 }
 
+.section {
+  scroll-margin-top: 5.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section:first-of-type {
+  padding-top: 0;
+  min-height: min(88vh, 760px);
+}
+
 .page__header {
   display: grid;
   gap: 0.55rem;

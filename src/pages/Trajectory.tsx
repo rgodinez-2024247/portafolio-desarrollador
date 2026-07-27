@@ -4,7 +4,7 @@ import './Page.css'
 
 export function Trajectory() {
   return (
-    <section className="page">
+    <section id="experiencia" className="page section">
       <header className="page__header">
         <p className="page__eyebrow">Curriculum virtual</p>
         <h1>Educación y experiencia</h1>

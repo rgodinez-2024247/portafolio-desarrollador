@@ -4,7 +4,7 @@ import './Page.css'
 
 export function About() {
   return (
-    <section className="page">
+    <section id="sobre-mi" className="page section">
       <header className="page__header">
         <p className="page__eyebrow">Identidad</p>
         <h1>Sobre mí</h1>

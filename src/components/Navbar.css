@@ -29,6 +29,11 @@
   gap: 0.65rem;
   text-decoration: none;
   color: var(--neon-cyan);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
 }
 
 .nav__brand-mark {
@@ -39,12 +44,31 @@
   padding: 0.35rem 0.45rem;
   border: 1px solid var(--neon-cyan);
   box-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+  flex-shrink: 0;
 }
 
-.nav__brand-text {
+.nav__brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  line-height: 1.1;
+}
+
+.nav__brand-name {
   font-family: var(--font-display);
-  font-size: 0.78rem;
-  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e8fbff;
+}
+
+.nav__brand-surname {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--neon-orange);
+  text-shadow: 0 0 10px rgba(255, 107, 0, 0.35);
 }
 
 .nav__links {
@@ -62,6 +86,8 @@
   color: rgba(180, 230, 255, 0.7);
   padding: 0.4rem 0.55rem;
   border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
   transition:
     color 0.2s ease,
     border-color 0.2s ease,

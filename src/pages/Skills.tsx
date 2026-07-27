@@ -5,7 +5,7 @@ import './Page.css'
 
 export function Skills() {
   return (
-    <section className="page">
+    <section id="habilidades" className="page section">
       <header className="page__header">
         <p className="page__eyebrow">Capacidades</p>
         <h1>Habilidades</h1>
