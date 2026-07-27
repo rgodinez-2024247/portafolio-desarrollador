@@ -4,7 +4,7 @@
 }
 
 .section {
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: 7rem;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
 }
@@ -12,6 +12,12 @@
 .section:first-of-type {
   padding-top: 0;
   min-height: min(88vh, 760px);
+}
+
+@media (max-width: 720px) {
+  .section {
+    scroll-margin-top: 9rem;
+  }
 }
 
 .page__header {
