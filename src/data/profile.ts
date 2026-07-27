@@ -16,7 +16,8 @@ export const profile = {
     github: 'https://github.com/rgodinez-2024247',
     linkedin:
       'https://gt.linkedin.com/in/rigoberto-god%C3%ADnez-fajardo-51812b425',
-    computrabajo: '', // por confirmar
+    computrabajo:
+      'https://candidato.gt.computrabajo.com/candidate/cv/edit/?&s=true',
   },
   education: [
     {
