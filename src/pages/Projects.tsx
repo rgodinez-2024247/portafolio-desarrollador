@@ -6,26 +6,27 @@ import './Page.css'
 import './Projects.css'
 
 export function Projects() {
-  const live = projects.filter((p) => p.status === 'live')
-
-  const previewSlides = live.map((p) => (
-    <NeonCard key={p.id} className="preview-slide" accent="cyan">
-      <p className="preview-slide__label">Vista general</p>
-      <h3>{p.title}</h3>
-      <p>
-        {p.images.length > 0
-          ? 'Captura disponible — detalle completo abajo.'
-          : 'Cuando envíes las fotos de interfaz, aparecerán aquí en el carrusel.'}
-      </p>
-      <div className="preview-slide__frame">
-        {p.images[0] ? (
-          <img src={p.images[0]} alt={p.title} />
-        ) : (
-          <span>GRID PREVIEW // {p.title}</span>
-        )}
-      </div>
-    </NeonCard>
-  ))
+  const previewSlides = projects
+    .filter((p) => p.status === 'live' && p.images.length > 0)
+    .flatMap((p) =>
+      p.images.map((image, index) => (
+        <NeonCard
+          key={`${p.id}-${index}`}
+          className="preview-slide"
+          accent={index % 2 === 0 ? 'cyan' : 'orange'}
+        >
+          <p className="preview-slide__label">Vista de interfaz</p>
+          <h3>{p.title}</h3>
+          <p>
+            Captura {index + 1} de {p.images.length}. El detalle completo está
+            en la tarjeta del proyecto.
+          </p>
+          <div className="preview-slide__frame">
+            <img src={image} alt={`${p.title} captura ${index + 1}`} />
+          </div>
+        </NeonCard>
+      )),
+    )
 
   return (
     <section className="page">
@@ -38,10 +39,12 @@ export function Projects() {
         </p>
       </header>
 
-      <div className="projects-preview">
-        <h2 className="section-title">Vistas de proyectos</h2>
-        <Carousel items={previewSlides} label="Vistas de proyectos" />
-      </div>
+      {previewSlides.length > 0 && (
+        <div className="projects-preview">
+          <h2 className="section-title">Vistas de proyectos</h2>
+          <Carousel items={previewSlides} label="Vistas de proyectos" />
+        </div>
+      )}
 
       <div className="projects-grid">
         {projects.map((project) => (

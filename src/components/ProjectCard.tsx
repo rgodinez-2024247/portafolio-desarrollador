@@ -32,7 +32,15 @@ export function ProjectCard({ project }: Props) {
       )}
       <div className="project-card__media">
         {project.images.length > 0 ? (
-          <img src={project.images[0]} alt={`Vista de ${project.title}`} />
+          <>
+            <img src={project.images[0]} alt={`Vista de ${project.title}`} />
+            {project.images.length > 1 && (
+              <span className="project-card__shots">
+                +{project.images.length - 1} captura
+                {project.images.length > 2 ? 's' : ''}
+              </span>
+            )}
+          </>
         ) : (
           <div className="project-card__placeholder">
             {project.status === 'live'

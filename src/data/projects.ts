@@ -1,3 +1,7 @@
+import kinalBreakRegistro from '../assets/projects/kinal-break-registro.png'
+import restauranteIceInicio from '../assets/projects/restaurante-ice-inicio.png'
+import restauranteIceSucursales from '../assets/projects/restaurante-ice-sucursales.png'
+
 export type Project = {
   id: string
   title: string
@@ -25,7 +29,7 @@ export const projects: Project[] = [
       'Microservicios',
     ],
     repoUrl: 'https://github.com/rgodinez-2024247/Restaurante_ICE',
-    images: [],
+    images: [restauranteIceInicio, restauranteIceSucursales],
     status: 'live',
     tags: ['Ice Team', 'Backend', 'Microservicios'],
   },
@@ -64,7 +68,7 @@ export const projects: Project[] = [
       'Docker',
     ],
     repoUrl: 'https://github.com/Ice-Team-Proyects/Kinal-Break',
-    images: [],
+    images: [kinalBreakRegistro],
     status: 'live',
     tags: ['Ice Team', 'Cafetería', 'Full-stack'],
   },
