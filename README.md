@@ -1,25 +1,28 @@
 # Portafolio de desarrollador
 
-Portafolio personal (proyecto bimestral) — bienvenida, sobre mí, habilidades, educación/experiencia, proyectos, LinkedIn y CompuTrabajo.
+Portafolio personal de **Rigoberto Godinez Fajardo** con estética inspirada en *TRON: Legacy* (2010).
 
 ## Stack
 
-- **Vite** — build rápido y despliegue estático sencillo
-- **React 19 + TypeScript** — UI moderna y tipado seguro
-- **React Router** — secciones/navegación del portafolio
-- Despliegue previsto: **Vercel** o **GitHub Pages**
+- Vite + React 19 + TypeScript
+- React Router
+- CSS custom (neones, grid, glow)
 
-## Comandos
+## Secciones
+
+1. Bienvenida  
+2. Sobre mí  
+3. Habilidades  
+4. Educación / experiencia  
+5. Proyectos (Ice-team, EndOfLine + slots)  
+6. Conexión (GitHub, LinkedIn, CompuTrabajo)
+
+## Desarrollo
 
 ```bash
 npm install
-npm run dev      # desarrollo local
-npm run build    # build de producción
-npm run preview  # previsualizar build
+npm run dev
+npm run build
 ```
 
-## Estructura (según consignas)
-
-1. Bienvenida  
-2. Información personal (descripción, datos, habilidades, educación/experiencia, vistas y listado de proyectos)  
-3. Enlaces a LinkedIn y CompuTrabajo  
+Flujo Git: trabajar en ramas `feature/*` y fusionar a `main` cuando esté listo.

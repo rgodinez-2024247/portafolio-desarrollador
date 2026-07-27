@@ -1,0 +1,46 @@
+.neon-card {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(6, 18, 32, 0.92) 0%,
+    rgba(2, 8, 18, 0.88) 100%
+  );
+  border: 1px solid var(--neon-cyan);
+  border-radius: 2px;
+  padding: 1.25rem 1.35rem;
+  box-shadow:
+    0 0 0 1px rgba(0, 229, 255, 0.15) inset,
+    0 0 18px rgba(0, 229, 255, 0.25),
+    0 0 40px rgba(0, 229, 255, 0.08);
+  overflow: hidden;
+}
+
+.neon-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(0, 229, 255, 0.06) 50%,
+    transparent 60%
+  );
+}
+
+.neon-card--orange {
+  border-color: var(--neon-orange);
+  box-shadow:
+    0 0 0 1px rgba(255, 107, 0, 0.18) inset,
+    0 0 18px rgba(255, 107, 0, 0.28),
+    0 0 40px rgba(255, 107, 0, 0.1);
+}
+
+.neon-card--orange::before {
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255, 107, 0, 0.07) 50%,
+    transparent 60%
+  );
+}

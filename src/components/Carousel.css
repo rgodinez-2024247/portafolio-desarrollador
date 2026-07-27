@@ -1,0 +1,74 @@
+.carousel {
+  display: grid;
+  gap: 1rem;
+}
+
+.carousel__viewport {
+  position: relative;
+  min-height: 220px;
+}
+
+.carousel__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(24px);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+  pointer-events: none;
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+.carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+}
+
+.carousel__btn {
+  font-family: var(--font-display);
+  color: var(--neon-cyan);
+  background: transparent;
+  border: 1px solid rgba(0, 229, 255, 0.55);
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.carousel__btn:hover {
+  background: var(--neon-cyan);
+  color: var(--bg-deep);
+}
+
+.carousel__dots {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.carousel__dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 0;
+  border: 1px solid var(--neon-cyan);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.carousel__dot--active {
+  background: var(--neon-orange);
+  border-color: var(--neon-orange);
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.65);
+}

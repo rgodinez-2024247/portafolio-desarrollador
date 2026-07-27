@@ -1,0 +1,125 @@
+.home {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.home__hero {
+  position: relative;
+  min-height: min(72vh, 640px);
+  display: grid;
+  align-content: center;
+  gap: 0.85rem;
+  padding: 2rem 0 1rem;
+}
+
+.home__signal {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  color: var(--neon-orange);
+  text-shadow: 0 0 12px rgba(255, 107, 0, 0.55);
+  animation: flicker 5s infinite;
+}
+
+.home__name {
+  margin: 0;
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 4.6rem);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  color: #f2fcff;
+  text-shadow:
+    0 0 18px rgba(0, 229, 255, 0.55),
+    0 0 48px rgba(0, 229, 255, 0.25);
+  background: linear-gradient(180deg, #ffffff 10%, var(--neon-cyan) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(180, 230, 255, 0.85);
+}
+
+.home__phrase {
+  margin: 0.35rem 0 0;
+  max-width: 36rem;
+  font-size: 1.15rem;
+  color: rgba(210, 235, 245, 0.92);
+  border-left: 2px solid var(--neon-cyan);
+  padding-left: 1rem;
+  box-shadow: -8px 0 18px rgba(0, 229, 255, 0.12);
+}
+
+.home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.home__carousel-wrap {
+  max-width: 720px;
+}
+
+.home-slide {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.home-slide__eyebrow {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--neon-orange);
+}
+
+.home-slide h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: #eafbff;
+}
+
+.home-slide p {
+  margin: 0;
+  color: rgba(190, 220, 235, 0.9);
+  line-height: 1.55;
+}
+
+.home-slide a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.home-slide a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.45;
+  }
+}

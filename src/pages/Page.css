@@ -1,0 +1,140 @@
+.page {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.page__header {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 40rem;
+}
+
+.page__eyebrow {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--neon-orange);
+  text-shadow: 0 0 10px rgba(255, 107, 0, 0.4);
+}
+
+.page__header h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.06em;
+  color: #eefbff;
+  text-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+}
+
+.page__lead {
+  margin: 0;
+  color: rgba(190, 220, 235, 0.9);
+  line-height: 1.55;
+}
+
+.page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.stack-gap {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.section-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+}
+
+.card-heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: #eafbff;
+}
+
+.card-sub {
+  margin: 0;
+  color: rgba(180, 230, 255, 0.75);
+}
+
+.meta-line {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--neon-orange);
+}
+
+.facts {
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.facts div {
+  display: grid;
+  gap: 0.2rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.facts dt {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+}
+
+.facts dd {
+  margin: 0;
+  color: rgba(210, 235, 245, 0.95);
+}
+
+.facts a,
+.link-list a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+}
+
+.facts a:hover,
+.link-list a:hover {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.link-list li {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.link-list span {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--neon-orange);
+}
+
+.pending {
+  color: rgba(255, 180, 120, 0.85);
+  font-style: normal;
+  font-size: 0.9rem;
+}
