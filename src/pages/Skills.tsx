@@ -10,7 +10,8 @@ export function Skills() {
         <p className="page__eyebrow">Capacidades</p>
         <h1>Habilidades</h1>
         <p className="page__lead">
-          Niveles aproximados — los afinamos juntos cuando me digas tus % reales.
+          Estimados según el stack de Ice Team (Banco-Ice, Kinal-Break,
+          Restaurante_ICE) y EndOfLine. Los afinamos si quieres ajustar alguno.
         </p>
       </header>
 

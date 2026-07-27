@@ -11,12 +11,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'ice-team',
-    title: 'Ice-team · Restaurante_ICE',
+    id: 'restaurante-ice',
+    title: 'Ice Team · Restaurante_ICE',
     description:
-      'Sistema de gestión de restaurantes con arquitectura de microservicios: menús digitales, mesas, pedidos, reservaciones, eventos y reportes. Trabajo en equipo con SCRUM.',
+      'Sistema de gestión de restaurantes con microservicios: menús, mesas, pedidos, reservaciones, eventos y reportes. Arquitectura empresarial con autenticación JWT y trabajo bajo SCRUM.',
     skills: [
-      'ASP.NET Core 8',
+      'ASP.NET Core',
       'C#',
       'PostgreSQL',
       'MongoDB',
@@ -27,18 +27,57 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/rgodinez-2024247/Restaurante_ICE',
     images: [],
     status: 'live',
-    tags: ['Backend', 'Equipo', 'Microservicios'],
+    tags: ['Ice Team', 'Backend', 'Microservicios'],
+  },
+  {
+    id: 'banco-ice',
+    title: 'Ice Team · Banco-Ice',
+    description:
+      'Plataforma de gestión bancaria: cuentas, servicios y transacciones. Backend modular en Node.js/Express con PostgreSQL, servicio de autenticación en C#, panel admin en React y app móvil con Expo.',
+    skills: [
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'C# / ASP.NET',
+      'React',
+      'Expo / React Native',
+      'Docker',
+    ],
+    repoUrl: 'https://github.com/Ice-Team-Proyects/Banco-Ice',
+    images: [],
+    status: 'live',
+    tags: ['Ice Team', 'Full-stack', 'Banca'],
+  },
+  {
+    id: 'kinal-break',
+    title: 'Ice Team · Kinal-Break',
+    description:
+      'Plataforma web para la cafetería de Kinal. Clientes React (admin, customer y user), APIs en Node/Express, autenticación ASP.NET y persistencia con PostgreSQL/MongoDB.',
+    skills: [
+      'React',
+      'Vite',
+      'Node.js',
+      'Express',
+      'C# / ASP.NET',
+      'PostgreSQL',
+      'MongoDB',
+      'Docker',
+    ],
+    repoUrl: 'https://github.com/Ice-Team-Proyects/Kinal-Break',
+    images: [],
+    status: 'live',
+    tags: ['Ice Team', 'Cafetería', 'Full-stack'],
   },
   {
     id: 'end-of-line',
     title: 'EndOfLine',
     description:
-      'Proyecto colaborativo en Java. Espacio reservado para capturas y detalle ampliado cuando envíes las fotos e información del alcance.',
-    skills: ['Java', 'Trabajo en equipo', 'Git'],
+      'Aplicación web de concesionario en Java (JSP) con MySQL: gestión de empleados, clientes, inventario, proveedores y taller bajo un enfoque MVC.',
+    skills: ['Java', 'JSP', 'MySQL', 'MVC', 'CSS'],
     repoUrl: 'https://github.com/dvelasquez-2024226/EndOfLine',
     images: [],
     status: 'live',
-    tags: ['Java', 'Colaborativo'],
+    tags: ['Java', 'Colaborativo', 'Web'],
   },
   {
     id: 'slot-1',

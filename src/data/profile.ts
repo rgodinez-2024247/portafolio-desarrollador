@@ -3,45 +3,58 @@ export const profile = {
   shortName: 'Rigoberto Godinez',
   age: 20,
   city: 'Ciudad de Guatemala',
-  title: 'Desarrollador en formación',
+  title: 'Perito Técnico en Informática',
   school: 'Fundación Kinal',
-  career: 'Perito Técnico en Computación',
+  career: 'Perito Técnico en Informática',
   welcomePhrase: 'El código es el camino. El diseño es la luz.',
-  yearsDeveloping: 2,
-  about: `Estudiante de Perito Técnico en Computación en Kinal. Me apasiona construir software limpio, interfaces con carácter y sistemas que resuelvan problemas reales. Busco crecer como desarrollador uniendo lógica, diseño y trabajo en equipo.`,
+  yearsDeveloping: 3,
+  about: `Tengo 20 años y estudio informática en Kinal. Los últimos 3 años los he dedicado a aprender frente a la computadora y a aplicar lo aprendido en proyectos reales con mi equipo. Me desenvuelvo bien socialmente, aporto ideas con claridad y me siento cómodo hablando en público; siempre estoy dispuesto a colaborar y a ayudar.`,
   goals:
-    'Consolidar una base sólida en desarrollo web y backend, aportar en proyectos reales y seguir formando un portafolio que demuestre evolución constante.',
+    'Seguir creciendo como desarrollador full-stack, aportar en proyectos de equipo con impacto real y construir un portafolio que refleje evolución constante.',
   contact: {
     email: 'rgodinez-2024247@kinal.edu.gt',
     github: 'https://github.com/rgodinez-2024247',
-    linkedin: '', // por confirmar
+    linkedin:
+      'https://gt.linkedin.com/in/rigoberto-god%C3%ADnez-fajardo-51812b425',
     computrabajo: '', // por confirmar
   },
   education: [
     {
       place: 'Fundación Kinal',
-      role: 'Perito Técnico en Computación',
-      period: 'En curso',
+      role: 'Perito Técnico en Informática',
+      period: '3 años · En curso',
       detail:
-        'Formación técnica enfocada en programación, bases de datos y desarrollo de software.',
+        'Formación técnica en programación, bases de datos, desarrollo web y trabajo colaborativo con metodologías ágiles.',
     },
   ],
   experience: [
     {
-      place: 'Proyectos académicos / equipo',
+      place: 'Ice Team',
       role: 'Desarrollador colaborativo',
       period: 'Actual',
       detail:
-        'Participación en proyectos de equipo (Ice-team / Restaurante_ICE, EndOfLine) aplicando metodologías ágiles y stacks modernos.',
+        'Participación en Restaurante_ICE, Banco-Ice y Kinal-Break: microservicios, APIs, clientes React y autenticación con ASP.NET.',
+    },
+    {
+      place: 'Proyecto EndOfLine',
+      role: 'Desarrollador Java',
+      period: 'Académico',
+      detail:
+        'Aplicación web de concesionario con Java, JSP, MySQL y arquitectura MVC en equipo.',
     },
   ],
+  // Estimados a partir del stack real de Ice Team + EndOfLine
   skills: [
-    { name: 'JavaScript / TypeScript', level: 70 },
-    { name: 'React', level: 65 },
-    { name: 'HTML & CSS', level: 80 },
-    { name: 'Java', level: 60 },
-    { name: 'C# / ASP.NET', level: 55 },
-    { name: 'PostgreSQL', level: 50 },
-    { name: 'Git & GitHub', level: 75 },
+    { name: 'JavaScript', level: 85 },
+    { name: 'React (Vite)', level: 80 },
+    { name: 'C# / ASP.NET', level: 78 },
+    { name: 'Node.js / Express', level: 75 },
+    { name: 'Git & GitHub', level: 82 },
+    { name: 'PostgreSQL', level: 72 },
+    { name: 'HTML & CSS', level: 70 },
+    { name: 'Docker', level: 68 },
+    { name: 'Java', level: 68 },
+    { name: 'MongoDB', level: 65 },
+    { name: 'React Native / Expo', level: 60 },
   ],
 } as const
